@@ -1,0 +1,29 @@
+.button {
+  --buttonColor: var(--aqua);
+  --buttonTextColor: var(--white);
+  background-color: var(--buttonColor);
+  color: var(--buttonTextColor);
+  border: none;
+  border-radius: 5px;
+  padding: 4px 16px;
+
+  &--outline {
+    border: solid 1px var(--buttonColor);
+    background-color: transparent;
+    color: var(--buttonColor);
+  }
+  &--ghost {
+    background-color: transparent;
+    color: var(--buttonColor);
+  }
+
+  &--secondary {
+    --buttonColor: var(--grey);
+  }
+  &--danger {
+    --buttonColor: var(--red);
+  }
+  &--long {
+    min-width: 100px;
+  }
+}

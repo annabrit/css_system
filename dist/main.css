@@ -1,0 +1,38 @@
+:root {
+  --white: #ffffff;
+  --blue: #40798c;
+  --grey: #737373;
+  --red: #dd1414;
+  --aqua: #70a9a1;
+  --green: #9ec1a3;
+  --yellow: #cfe0c3;
+  --black: #1f363d;
+}
+
+.button {
+  --buttonColor: var(--blue);
+  --buttonTextColor: var(--white);
+  background-color: var(--buttonColor);
+  color: var(--buttonTextColor);
+  border: none;
+  border-radius: 5px;
+  padding: 4px 16px;
+}
+.button--outline {
+  border: solid 1px var(--buttonColor);
+  background-color: transparent;
+  color: var(--buttonColor);
+}
+.button--ghost {
+  background-color: transparent;
+  color: var(--buttonColor);
+}
+.button--secondary {
+  --buttonColor: var(--grey);
+}
+.button--danger {
+  --buttonColor: var(--red);
+}
+.button--long {
+  min-width: 100px;
+}
